@@ -12,13 +12,20 @@ class Role(object):
 class PlayerRole(Role):
     def __init__(self, name, blood, weapon, armor, gender, occupation, religion, package):
         super(PlayerRole,self).__init__(name, blood, weapon, armor)
+        self.gender = gender
+        self.occupation = occupation
+        self.religion = religion
+        self.package = package
+
+
     pass
 
 
-class BadlyRole(Role):
-    pass
+class Weapon(object):
+    def __init__(self, name, attact, usetimes, description):
+        self.name = name
+        self.attact = attact
+        self.usetimes = usetimes
+        self.description = description
 
-
-class LittleElf(object):
-    pass
 
